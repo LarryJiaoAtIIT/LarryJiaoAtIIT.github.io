@@ -28,7 +28,7 @@ section#anchor{
 }
 
 section#Introduction{
-	background-color:#665a40;
+	 background-color:#665a40;
 }
 section#ClipEditor{
 	background-color:#8a7b57;
@@ -40,11 +40,46 @@ section#GraphEditor{
 	background-color:#ccb681;
 }
 
+img.introcat{
+	max-width:65%;
+	float:right;
+	top:8em;
+	right:8em;
+	position:relative;
+	height:auto;
+	
+}
+
+img.clipfire{
+	max-width:65%;
+	float:right;
+	top:12em;
+	right:8em;
+	position:relative;
+	height:auto;
+}
+
+img.motiondog{
+	max-width:65%;
+	float:right;
+	top:16em;
+	right:8em;
+	position:relative;
+	height:auto;
+}
+video{
+	max-width:65%;
+	float:right;
+	bottom:48em;
+	right:8em;
+	position:relative;
+	height:auto;
+	
+}
 h1.introText, h1.ClipText, h1.MotionText, h1.GraphText{
 	font-family:"Source Sans Pro",sans-serif;
 	color:white;
 	font-size:3em;
-	width:88%;
 	padding-left:1em;
 	padding-top:10em;
 	padding-bottom:1em;
@@ -55,7 +90,7 @@ p.introText, p.ClipText, p.MotionText, p.GraphText{
 	font-family:"Source Sans Pro",sans-serif;
 	color:white;
 	font-size:2em;
-	width:88%;
+	width:68%;
 	padding-left:1.5em;
 	padding-bottom:6em;
 }
