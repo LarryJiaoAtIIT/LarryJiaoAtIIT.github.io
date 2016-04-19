@@ -1,4 +1,4 @@
-/*	HTML5 Reset	*/
+/*	HTML Reset	*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
@@ -13,212 +13,214 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
 
-html,body{
-	background-color:#191919;
-	font-family:"Source Sans Pro", Arial, sans-serif;
-	text-decoration:none;
+/*	-	-	-	-	Universal CSS, for ALL Webpages After Index.html	-	-	-	-	-	-	*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body{
+	background-color:#111111;	/* 	#D1D0CE	*/
+	font-family:Roboto, sans-serif;
+
 }
-img, video{
-	min-width:15em;
-	display:block;
+a:link{
+		color:#cccccc;
+		text-decoration:none;
+}
+
+a:visited{
+		color:#A9A9A9;
+		text-decoration:none;
+}
+
+
+ul{
+	list-style-type:none;
+	}	
+
+/*	Header Bar */
+.header img{
+ 	background-color:white;
+}
+header{
+	background-color:#222;
+}
+h1.home{
+	font-family:Source Sans Pro, sans-serif;
+	color:#aaa;
+	font-size:3em;
+	position: absolute;
+	margin-left:4em;
+	margin-top:0.5em;
+}
+
+
+/*	Navigation Bar -- Welcome, Class Registration, Academics, Finance, GMail, Blackboard*/
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: auto;
+  z-index: 0;
+  
+  list-style: none;
+  background: #111;
+   -moz-box-shadow:		0px 0px 5px 0px #000000;
+   -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow:       		  0px 0px 5px 0px #000000;
+  
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  width:15%;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+   -moz-box-shadow:		0px 3px 5px 0px #000000;
+   -webkit-box-shadow: 0px 3px 5px 0px #000000;
+    box-shadow:       		  0px 3px 5px 0px #000000;
+}
+
+.nav-item a {
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+/* ------------------------------------------------ */
+
+/* Content Boxes - Will Provide Boxes with Links inside */
+
+section.content1{	/* Box 1 next to Nav-bar */
+	border: 0.1em solid #a20000;
+	border-radius: 2em;
+	background-color:#222222;
+	padding: 1em;
+	margin: 0 auto;
+	margin-left:16%;
+	margin-top: 1%;
+	width:35%;
+	height:40em;
+	position:absolute;
+	overflow:hidden;
+	
+}
+section.content2{ /* Box 2 next to Box 1; Needs to readjust for Media Queries */
+	border: 0.1em solid #a20000;
+	border-radius: 2em;
+	background-color:#222222;
+	padding: 1em;
+	margin: 0 auto;
+	margin-left:55%;
+	margin-top: 1%;
+	width:35%;
+	height:40em;
+	position:absolute;
+	
+	
+}
+section.content1 > h1.title, section.content2 > h1.title{	/* First set of Text in Box */
+	font-size:2em;
+	color:white;
+	padding-bottom:0.5em;
+}
+section.content1 > h2.headline, section.content2 > h2.headline, 
+section.content1 > h2.headline > a, li.grade >  a, li.grade > h2{	/* Second set of text in box */
+	font-size:1.2em;
+	color:#cccccc;
+	padding-bottom:0.45em;
+	list-style: none;
+	text-decoration:none;
+	
+}
+
+section.content1 > p.preview, section.content2 > p.preview{	/* Third set of text in box */
+	font-size:1.1em;
+	line-height:1.1em;
+	color:#aaaaaa;
+	padding-bottom:2em;
+}
+/*Welcome.html*/
+div#awcc1460997599263{
+	border-radius:0.8em;
+	padding-bottom:1em;
+}
+img.alert{
+	width:100%;
 	height:auto;
+	border-radius:0.8em;
 }
-@-webkit-keyframes fadeIn{from{opacity:0;} to {opacity:1;}}
-@-moz-keyframes fadeIn{from{opacity:0;} to {opacity:1;}}
-@keyframes fadeIn{from{opacity:0;} to {opacity:1;}}
-.fade-in{
-	opacity:0;
-	-webkit-animation: fadeIn ease-in 1;
-	-moz-animation:fadeIn ease-in 1;
-	animation: fadeIn ease-in 1;
-	
-	-webkit-animation-fill-mode:forwards;
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-	
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
-}
-
-.fade-in.one {
--webkit-animation-delay: 1s;
--moz-animation-delay: 1s;
-animation-delay: 1s;
-}
- 
-.fade-in.two {
--webkit-animation-delay: 3s;
--moz-animation-delay:3s;
-animation-delay: 3s;
-}
- 
-.fade-in.three {
--webkit-animation-delay: 5s;
--moz-animation-delay: 5s;
-animation-delay:5s
-}
-
-.fade-in.four {
--webkit-animation-delay: 7s;
--moz-animation-delay: 7s;
-animation-delay:7s
-}
-
-h1,img, video,p.introText, p.clipText, p.motionText, p.graphText{
-	padding-top:1em;
-}
-/*	-	-	-	-	-	-	-	Media Queries	-	-	-	-	-	-	-	-	*/
-@media screen and (min-width:0em) and (max-width:20em){	/* 0px	-	320px	*/
-section#box{
-	background-color:#2b2b2b;
-	font-size:1em;
-	box-shadow: 10px 5px 5px #141414;
-	margin-top: 0.3em;
+/*academics.html*/
+.academic-calendar{
+	border-radius:0.8em;
 	width:100%;
-	color:#F2F0F0;
-	}
+	height:90%;
 	
-	li{
-	font-size:0.8em;
-	margin-right:0.5em;
-	}
-img,video{
-	width:100%;
-	height:auto;
-	}
-
-a.anchorPoints, a.bannerTitle{
-	text-decoration:none;
-	color:#F2F0F0;
 }
-}
-@media screen and (min-width:20.0625em) and (max-width:30em){	/* 321px	-	480px	*/
-section#box{
-	background-color:#2b2b2b;
-	font-size:1.5em;
-	box-shadow: 10px 5px 5px #141414;
-	margin-top: 0.5em;
-	width:80%;
-	padding: 4em 2em 2em 4em;
-	margin-left: auto;
-	margin-right: auto;
-	color:#F2F0F0;
-	}
-	li{
-	font-size:0.85em;
-	margin-right:0.75em;
-	}
-	img, video{
-		width:15%;
-		height:auto;
-	}
-a.anchorPoints, a.bannerTitle{
-	text-decoration:none;
-	color:#F2F0F0;
-}
+/*Classregister.html*/
+.term{
+	font-family:Roboto, sans-serif;
+	margin-left:46.7%;
 }
 
-@media screen and (min-width:30.0625em) and (max-width:55.75em) {	/*	481px - 892px */
-	section#box{
-	background-color:#2b2b2b;
-	font-size:1.5em;
-	box-shadow: 10px 5px 5px #141414;
-	margin-top: 0.5em;
-	width:70%;
-	padding: 5em 3em 3em 5em;
-	margin-left: auto;
-	margin-right: auto;
-	color:#F2F0F0;
-	}
-		li{
-	font-size:1em;
-	margin-right:3.5em;
-	}
-	img{
-		width:85%;
-		height:auto;
-	}
+label{
+	font-family:Roboto, sans-serif;
+	color:#cccccc;
+}
+
+
+/*Schedule.html*/
+
+section.schedule{
+	margin-left:15%;
+}
+
+
+
+section.schedule table tbody{
+  	position: absolute;
+  	width: 70%;
+  	height:auto;
+  	font-size: 1em;
+  	line-height: 2em;
+  	color: #CCCCCC;
+  	border-radius: 10px;
+  	padding: 1em;
+  	border: 0.1em solid #a20000;
+	background-color: #222222;
 	
-a.anchorPoints, a.bannerTitle{
-	text-decoration:none;
-	color:#F2F0F0;
-	}
-}
-@media screen and (min-width:55.8125em) and (max-width:120em) {	/*	893px - 1080px */
-	section#box{
-	background-color:#2b2b2b;
-	font-size:1.5em;
-	box-shadow: 10px 5px 5px #141414;
-	margin-top: 0.5em;
-	width:70%;
-	padding: 5em 3em 3em 5em;
-	margin-left: auto;
-	margin-right: auto;
-	color:#F2F0F0;
-	}
-		li{
-	font-size:1em;
-	margin-right:3.5em;
-	}
-	img,video{
-		width:95%;
-		height:auto;
-	}
-	
-a.anchorPoints, a.bannerTitle{
-	text-decoration:none;
-	color:#F2F0F0;
-	}
 }
 
 
-/*		Fixed Banner		*/
+section.schedule table{
+	margin-left:1em;
+}
 
-section#banner{ /* Top Banner */
-	height:5em;	/* Size of banner */
-	background: -webkit-linear-gradient(#ad9a6d,#2d2d2d);
-	background: -o-linear-gradient(#ad9a6d,#2d2d2d); 
-	background: -moz-linear-gradient(#ad9a6d,#2d2d2d);
-	background: linear-gradient(#ad9a6d,#2d2d2d); 
-	box-shadow:1px 1px black;
-	width:100%;
-	z-index:3;
+section.schedule table tbody tr{
+	display: inline-block;
 }
-ul#anchor{
-	background-color:#141414;
-	text-align:right;
-	margin-top: 1.5em;
-	opacity:0.85;
-	z-index:3;
+
+section.schedule table tbody tr th{
+	padding:2em;
+	background-color:
+	background-radius:0.8em;
 }
-li{
-	display:inline;
-	padding:0.2em;
+
+section.schedule table tbody tr.classdetails{
+	display: block;
+	margin-top: -2em;
+	background-color:#333333;
 }
-p.bannerTitle{
-	text-align:center;
-	font-size:2.5em;
-	color:#F2F0F0;
-}
-a.anchorPoints, a.bannerTitle{
-	text-decoration:none;
-	color:#F2F0F0;
-}
-/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-*/
-/*	-	-	- Sections after Banner	-	-	-	-	-*/
-section#box{		
-	background-color:#2b2b2b;
-	font-size:1.5em;
-	box-shadow: 10px 5px 5px #141414;
-	margin-top: 0.5em;
-	width:70%;
-	padding: 5em 5em 5em 5em;
-	margin-left: auto;
-	margin-right: auto;
-	color:#F2F0F0;
+section.schedule table tbody tr.classdetails td{
+	padding-top:0.5em;
+	padding-left:1.7em;
+	padding-bottom:2em;
 }
 
 
