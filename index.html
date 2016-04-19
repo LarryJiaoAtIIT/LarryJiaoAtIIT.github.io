@@ -1,36 +1,77 @@
-
-<!DOCTYPE html> 
-<html lang="en"> 
-
-<head> 
-	<meta charset="UTF-8"> 
-     	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"> 
- 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
- 	<title>myIIT Login</title> 
-</head>
-
-<body>
-<div class="headwrapper">
-	<a href="index.html"><img class="logo" src="img/myiit-logo.png" alt="IIT Logo"></a>
-	<div class="name"> 
-		<a class="first" href="index.html">my.</a>	
-		<a class="second" href="index.html">iit.</a>
-		<a class="third" href="index.html">edu</a>
-	</div>
-</div>
-<div class="bodywrapper">
-	<h2>myPortal Login</h2>
-	<div class="form">
-		<form  action="welcome.html">
-	  		<label for="username">Username/Email:</label>
-	  		<input type="text" placeholder="Username/Email" id="username">
-	  		<label for="password">Password:</label>
-	  		<input type="text" placeholder="Password" id="password">
-	  		<button type="submit">Login</button>
-		</form>
-	</div>
-</div>
-	
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Source Filmmaker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+	<link href="css/screen.css" type="text/css" rel='stylesheet' media="screen"/>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	</head>
+		<body>
+		<section id="banner">
+			<header>
+				<a id="banner" href="index.html"><p class="bannerTitle">Source Filmmaker</p></a>
+			</header>
+			<ul id="anchor">
+				<li><a class="anchorPoints" href= "#GraphEditor"> Graph Editor</a></li>
+				<li><a class="anchorPoints" href="#MotionEditor">Motion Editor</a></li>
+				<li><a class="anchorPoints" href="#ClipEditor">Clip Editor</a>			</li>
+				<li><a class="anchorPoints" href="#Introduction">Introduction</a>	</li>
+			</ul>
+		</section>
+		<section id="box">
+		<section id="Introduction">
+		<h1 class="introText">Introduction to Source Filmmaker</h1>
+			<p class="introText">
+			Source Film maker is a video-capturing and editing application that works inside 
+			the Source Game Engine. The tool, created by ValVe Corporation, has been used
+			to create over 50 animated shorts for its Source games, including <i>Team Fortress 2</i>,
+			the <i>Left 4 Dead</i> series, and <i>Half-Life</i> series.
+			</p>
+			<picture>
+				<source media="(min-width:600px)" srcset="img/sfm-cat.png" >
+				<img class="fade-in one" src="img/sfm-cat.png" alt="sfm with cat">
+			</picture>
+		</section>
+		<section id="ClipEditor">
+		<h1 class="ClipText">The Clip Editor</h1>
+			<p class="clipText">
+			The Clip Editor is used in the final production of your animation. You will be able to see your
+			creation come to life after adding the lights, camera, and the action. Everything piece of effort
+			you have placed will come into full effect with the clip editor, as you place audio clips within the
+			same codecs in here.
+			</p>
+			<picture>
+				<source media="(min-width:600px)" srcset="img/sfm-fire.png" >
+				<img class="fade-in two" src="img/sfm-fire.png" alt="Clip-Editing">
+			</picture>
+		</section>
+		<section id="MotionEditor">
+		<h1 class="MotionText">The Motion Editor</h1>
+		<p class="motionText">
+		The Motion Editor is one of the two ways you can animate. Many animators primarily use this to
+		pose different characters. 
+		</p>
+		<picture>
+			<source media="(min-width:600px)" srcset="img/sfm-dog.png" >
+			<img class="fade-in three" src="img/sfm-dog.png" alt="Clip-Editing">
+		</picture>
+		</section>
+		<section id="GraphEditor">
+		<h1 class="GraphText">The Graph Editor</h1>
+		<p class="graphText">
+		The Graph Editor is the second of the two ways you can animate. With the graph editor, you can provide
+		very granular changes for the inbetweens, adjust the amount of velocity a movement is positioned, as well
+		as change facial structure of the individual playermodels within a keyframe.
+		</p>
+			<video class="fade-in four" width="50%" height="28%" controls>
+			<source src="vid/mateedge-sfm.mp4" type="video/mp4">
+			Your browser does not support MP4 Files. 
+			</video>
+		</section>
+		
+		
+		<script type="text/javascript" src="js/modernizr-custom.js"></script> 
+		</section>
+		</body>
 </html>
- 
