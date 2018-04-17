@@ -1,4 +1,55 @@
-#bg-layer{
-	background: radial-gradient(#FFFFFF,#404040)
+@import url ("https://meyerweb.com/eric/tools/css/reset/reset.css");
 
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+	background: radial-gradient(circle,#FFFFFF,#404040);
+}
+
+#bg-layer{
+	border: 0.5em solid black;
+	border-radius:3em;
+	
+	background-color:white;
+	
+	height:400px;
+	width: 800px;
+	
+	
+	margin-top:10%;
+	margin-left:25%;
+	
+}
+
+#bg-layer-text {
+	position:relative;
+	
+	text-decoration:none;
+	font-family:arial;
+	
+	margin-left:5%;
+	margin-right:5%;
+	
+}
+
+#bg-layer-text > table > tr,td{
+    margin: 0;
+    padding: 0.5em;
+	
+	border:0.1em solid black;
+	width:10%;
+	height:25%;
+}
+
+#bg-layer-text > hr{
+	width:95%;
+}
+
+a{
+	text-decoration:none;
 }
